@@ -1,6 +1,6 @@
 name: created issue
 on:
- issue:
+ issues:
    type: [opend]
 job:
   issue:
