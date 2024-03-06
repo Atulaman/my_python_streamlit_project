@@ -1,1 +1,11 @@
-name:created issue
+name: created issue
+on:
+ issue:
+   type: [opend]
+job:
+  issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "dumo github context"
+        runs: echo '${{ toJSON(github.event) }}' | jq
+        shell: bash
