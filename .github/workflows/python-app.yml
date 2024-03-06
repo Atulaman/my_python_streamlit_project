@@ -37,3 +37,5 @@ jobs:
       #  pytest tests/
     - name: Run application
       run: python -m streamlit run main.py
+      run: |
+        pkill -f "streamlit run app.py"
