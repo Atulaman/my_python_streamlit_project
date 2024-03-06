@@ -2,10 +2,10 @@ name: created issue
 on:
  issues:
    type: [opend]
-job:
+jobs:
   issue:
     runs-on: ubuntu-latest
     steps:
       - name: "dumo github context"
-        runs: echo '${{ toJSON(github.event) }}' | jq
+        run: echo '${{ toJSON(github.event) }}' | jq
         shell: bash
